@@ -7,4 +7,4 @@
  :repo "https://github.com/uvtc/janet-rand")
 
 (declare-source
- :source ["rand.janet"])
+ :source ["janet-rand"])
