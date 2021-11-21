@@ -78,7 +78,8 @@
   ``
   [n arr]
   (assert (<= n (length arr))
-          (string/format "n (%d) > length of array" n))
+          (string/format "n (%d) > length of array (%d)"
+                         n (length arr)))
   (def res @[])
   (def ar2 (array ;arr))
   (for _ 0 n
@@ -97,7 +98,7 @@
     (rand-elems 2 @[:breath])
     ([err]
       err))
-  # => "n (2) > length of array"
+  # => "n (2) > length of array (1)"
 
   (def animals
     @[:ant :bee :cat :dog :elephant :fox :giraffe :horse])
